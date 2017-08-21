@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C09A14381F4B753E009A9E1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C09A14371F4B753E009A9E1A /* main.cpp */; };
+		C09A14401F4B7553009A9E1A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09A143F1F4B7553009A9E1A /* OpenGL.framework */; };
+		C09A14421F4B755D009A9E1A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09A14411F4B755D009A9E1A /* GLUT.framework */; };
+		C09A144A1F4B7827009A9E1A /* cReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C09A14491F4B7827009A9E1A /* cReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,11 @@
 /* Begin PBXFileReference section */
 		C09A14341F4B753E009A9E1A /* procedural-mesh-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "procedural-mesh-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09A14371F4B753E009A9E1A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C09A143F1F4B7553009A9E1A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C09A14411F4B755D009A9E1A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C09A14481F4B780A009A9E1A /* cReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cReader.h; sourceTree = "<group>"; };
+		C09A14491F4B7827009A9E1A /* cReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cReader.cpp; sourceTree = "<group>"; };
+		C09A144B1F4B7B82009A9E1A /* cMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cMesh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09A14421F4B755D009A9E1A /* GLUT.framework in Frameworks */,
+				C09A14401F4B7553009A9E1A /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +51,10 @@
 		C09A142B1F4B753E009A9E1A = {
 			isa = PBXGroup;
 			children = (
+				C09A14461F4B7672009A9E1A /* header */,
 				C09A14361F4B753E009A9E1A /* procedural-mesh-test */,
 				C09A14351F4B753E009A9E1A /* Products */,
+				C09A143E1F4B7553009A9E1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +70,27 @@
 			isa = PBXGroup;
 			children = (
 				C09A14371F4B753E009A9E1A /* main.cpp */,
+				C09A14491F4B7827009A9E1A /* cReader.cpp */,
 			);
 			path = "procedural-mesh-test";
+			sourceTree = "<group>";
+		};
+		C09A143E1F4B7553009A9E1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C09A14411F4B755D009A9E1A /* GLUT.framework */,
+				C09A143F1F4B7553009A9E1A /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C09A14461F4B7672009A9E1A /* header */ = {
+			isa = PBXGroup;
+			children = (
+				C09A14481F4B780A009A9E1A /* cReader.h */,
+				C09A144B1F4B7B82009A9E1A /* cMesh.h */,
+			);
+			name = header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09A144A1F4B7827009A9E1A /* cReader.cpp in Sources */,
 				C09A14381F4B753E009A9E1A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
